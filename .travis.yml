@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+  - lts/*
+  - node
+before_script:
+  - yarn lint
+  - yarn test
+script:
+  - yarn generate
+cache:
+  - yarn
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  local_dir: dist
+  fqdn: redpanda.dev
+  on:
+    repo: ressedpanda/redpanda.dev
+    branch: master

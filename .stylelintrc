@@ -1,0 +1,17 @@
+{
+  "extends": "stylelint-config-recommended-scss",
+  "plugins": ["stylelint-selector-bem-pattern"],
+  "rules": {
+    "font-family-no-missing-generic-family-keyword": true,
+    "function-calc-no-unspaced-operator": true,
+    "comment-no-empty": true,
+    "no-empty-source": true,
+    "no-descending-specificity": true,
+    "no-extra-semicolons": true,
+    "value-no-vendor-prefix": true,
+    "plugin/selector-bem-pattern": {
+      "preset": "bem",
+      "componentName": "/^[-_a-z0-9]+$"
+    }
+  }
+}

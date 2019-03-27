@@ -1,0 +1,15 @@
+# common
+*.log
+
+## ide
+.idea/
+
+# node
+node_modules/
+
+## nuxt
+.nuxt/
+dist/
+
+## test coverage
+coverage/
